@@ -11,13 +11,16 @@
 
 body {
   font-family: 'Red Hat Text', sans-serif;
-  height: 80vh; }
+  height: 100vh; }
 
 .countdown {
   background-color: var(--dark-desaturated-blue);
   height: 100%; }
   .countdown__stars {
-    height: 75%; }
+    height: 75%;
+    background-image: url(../images/bg-stars.svg);
+    background-repeat: no-repeat;
+    background-size: cover; }
   .countdown__mountains {
     background-image: url(../images/pattern-hills.svg);
     background-repeat: no-repeat;

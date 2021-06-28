@@ -14,13 +14,16 @@
 
 body {
   font-family: 'Red Hat Text', sans-serif;
-  height: 80vh;
+  height: 100vh;
 }
 
 .countdown {
   background-color: var(--dark-desaturated-blue);
   &__stars {
     height: 75%;
+    background-image: url(../images/bg-stars.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   &__mountains {
     background-image: url(../images/pattern-hills.svg);
