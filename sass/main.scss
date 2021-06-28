@@ -1,3 +1,34 @@
+:root {
+  --grayish-blue: hsl(237, 18%, 59%);
+  --soft-red: hsl(345, 95%, 68%);
+
+  --white: hsl(0, 0%, 100%);
+  --dark-desaturated-blue: hsl(236, 21%, 26%);
+  --very-dark-blue: hsl(235, 16%, 14%);
+  --very-dark-mostly-black-blue: hsl(234, 17%, 12%);
+}
+
 * {
   margin: 0px;
 }
+
+body {
+  font-family: 'Red Hat Text', sans-serif;
+  height: 80vh;
+}
+
+.countdown {
+  background-color: var(--dark-desaturated-blue);
+  &__stars {
+    height: 75%;
+  }
+  &__mountains {
+    background-image: url(../images/pattern-hills.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25%;
+  }
+  height: 100%;
+}
+
+
