@@ -30,6 +30,15 @@ body {
     .countdown__stars__clock {
       display: flex;
       color: var(--grayish-blue); }
+      .countdown__stars__clock__number {
+        margin: 0 1.5rem;
+        padding: 10rem; }
+      .countdown__stars__clock__number__digit {
+        height: 50px;
+        color: var(--soft-red);
+        background-color: var(--very-dark-blue);
+        font-size: 25px;
+        text-align: center; }
   .countdown__mountains {
     background-image: url(../images/pattern-hills.svg);
     background-repeat: no-repeat;

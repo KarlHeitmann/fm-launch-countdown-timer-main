@@ -1,6 +1,6 @@
 console.log("Ready");
 
-const DUE_DATE_STRING = '2021-06-30 00:00:00';
+const DUE_DATE_STRING = '2022-06-30 00:00:00';
 
 const DUE_DATE = Date.parse(DUE_DATE_STRING);
 

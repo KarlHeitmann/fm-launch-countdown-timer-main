@@ -37,6 +37,18 @@ body {
     &__clock {
       display: flex;
       color: var(--grayish-blue);
+      &__number {
+        margin: 0 1.5rem;
+        padding: 10rem;
+      }
+      &__number__digit {
+        height: 50px;
+        color: var(--soft-red);
+        // background-color: var(--dark-desaturated-blue);
+        background-color: var(--very-dark-blue);
+        font-size: 25px;
+        text-align: center;
+      }
     }
   }
   &__mountains {
