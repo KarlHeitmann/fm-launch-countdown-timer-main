@@ -33,6 +33,11 @@ body {
     &__heading {
       color: var(--white);
     }
+
+    &__clock {
+      display: flex;
+      color: var(--grayish-blue);
+    }
   }
   &__mountains {
     background-image: url(../images/pattern-hills.svg);
@@ -47,6 +52,10 @@ body {
     & > img {
       display: block;
       margin: 0 2rem;
+      &:hover {
+        margin: 0 4rem;
+        fill: white;
+      }
     }
   }
   height: 100%;
