@@ -10,7 +10,7 @@ console.log("Ready");
 // }
 
 // const DUE_DATE_STRING = '2026-01-31 17:30:17';
-const DUE_DATE_STRING = '2021-06-29 00:00:00';
+const DUE_DATE_STRING = '2021-06-30 00:00:00';
 
 const DUE_DATE = Date.parse(DUE_DATE_STRING);
 
@@ -26,8 +26,11 @@ setInterval(() => {
   console.log("Date.now(): ", Date.now());
   const delta = (DUE_DATE - Date.now()) / 1000;
   console.log("DUE_DATE - Date.now(): ", delta);
+
   console.log("seconds: ", delta % 60)
   console.log("minutes: ", (delta / 60) % 60)
-  console.log("hours: ",   (delta / 3600) % 60)
+  console.log("hours: ",   ((delta / 3600) % 24))
+  console.log("days: ",    (delta / 86400))
+
   const year = today.getFullYear()
 }, 1000)
