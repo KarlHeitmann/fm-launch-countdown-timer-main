@@ -27,10 +27,10 @@ setInterval(() => {
   const delta = (DUE_DATE - Date.now()) / 1000;
   console.log("DUE_DATE - Date.now(): ", delta);
 
-  const seconds_left = delta % 60;
-  const minutes_left = (delta / 60) % 60;
-  const hours_left   = ((delta / 3600) % 24);
-  const days_left    = (delta / 86400);
+  const seconds_left = Math.round(delta % 60);
+  const minutes_left = Math.round((delta / 60) % 60);
+  const hours_left   = Math.round(((delta / 3600) % 24));
+  const days_left    = Math.round((delta / 86400));
 
   console.log("seconds: ", seconds_left)
   console.log("minutes: ", minutes_left)
