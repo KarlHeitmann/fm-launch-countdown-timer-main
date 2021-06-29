@@ -32,6 +32,11 @@ setInterval(() => {
   const hours_left   = Math.round(((delta / 3600) % 24));
   const days_left    = Math.round((delta / 86400));
 
+  document.querySelector('#days').innerText = days_left;
+  document.querySelector('#hours').innerText = hours_left;
+  document.querySelector('#minutes').innerText = minutes_left;
+  document.querySelector('#seconds').innerText = seconds_left;
+
   console.log("seconds: ", seconds_left)
   console.log("minutes: ", minutes_left)
   console.log("hours: ",   hours_left)
