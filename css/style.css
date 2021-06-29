@@ -25,14 +25,16 @@ body {
     justify-items: center;
     align-items: center; }
     .countdown__stars__heading {
-      color: var(--white); }
+      color: var(--white);
+      text-transform: uppercase; }
     .countdown__stars__clock {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-gap: 0.25rem;
       color: var(--grayish-blue); }
       .countdown__stars__clock__number {
-        justify-self: center; }
+        justify-self: center;
+        text-transform: uppercase; }
       .countdown__stars__clock__digit {
         border-radius: 0.5rem;
         margin: 5px;

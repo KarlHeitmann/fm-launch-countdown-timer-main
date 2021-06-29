@@ -33,6 +33,7 @@ body {
 
     &__heading {
       color: var(--white);
+      text-transform: uppercase;
     }
 
     &__clock {
@@ -44,6 +45,7 @@ body {
         // margin: 0 1.5rem;
         // padding: 10rem;
         justify-self: center;
+        text-transform: uppercase;
       }
       &__digit {
         border-radius: 0.5rem;
