@@ -27,10 +27,15 @@ setInterval(() => {
   const delta = (DUE_DATE - Date.now()) / 1000;
   console.log("DUE_DATE - Date.now(): ", delta);
 
-  console.log("seconds: ", delta % 60)
-  console.log("minutes: ", (delta / 60) % 60)
-  console.log("hours: ",   ((delta / 3600) % 24))
-  console.log("days: ",    (delta / 86400))
+  const seconds_left = delta % 60;
+  const minutes_left = (delta / 60) % 60;
+  const hours_left   = ((delta / 3600) % 24);
+  const days_left    = (delta / 86400);
+
+  console.log("seconds: ", seconds_left)
+  console.log("minutes: ", minutes_left)
+  console.log("hours: ",   hours_left)
+  console.log("days: ",    days_left)
 
   const year = today.getFullYear()
 }, 1000)
