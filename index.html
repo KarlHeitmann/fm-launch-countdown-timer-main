@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap" rel="stylesheet">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <link rel="stylesheet" href="css/style.css">
@@ -19,12 +23,40 @@
 </head>
 <body>
 
-  We're launching soon
+  <div class="countdown">
+    <div class="countdown__stars">
+      <div class="countdown__stars__heading">
+        We're launching soon
+      </div>
 
-  Days
-  Hours
-  Minutes
-  Seconds
+      <div class="countdown__stars__clock">
+        <div id="days" class="countdown__stars__clock__digit"></div>
+        <div id="hours" class="countdown__stars__clock__digit"></div>
+        <div id="minutes" class="countdown__stars__clock__digit"></div>
+        <div id="seconds" class="countdown__stars__clock__digit"></div>
+        <div class="countdown__stars__clock__number">
+          Days
+        </div>
+        <div class="countdown__stars__clock__number">
+          Hours
+        </div>
+        <div class="countdown__stars__clock__number">
+          Minutes
+        </div>
+        <div class="countdown__stars__clock__number">
+          Seconds
+        </div>
+      </div>
+    </div>
+
+    <div class="countdown__mountains">
+      <img src="images/icon-facebook.svg" alt="Facebook icon">
+      <img src="images/icon-pinterest.svg" alt="Pinterest icon">
+      <img src="images/icon-instagram.svg" alt="Instagram icon">
+
+    </div>
+
+  </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
