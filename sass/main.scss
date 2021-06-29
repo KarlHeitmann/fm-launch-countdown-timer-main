@@ -25,10 +25,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    // align-items: center;
+    // justify-content: space-around;
+    justify-items: center;
     align-items: center;
-    justify-content: space-around;
 
     &__heading {
       color: var(--white);
@@ -37,10 +38,11 @@ body {
     &__clock {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 0.25rem;
       color: var(--grayish-blue);
       &__number {
-        margin: 0 1.5rem;
-        padding: 10rem;
+        // margin: 0 1.5rem;
+        // padding: 10rem;
         justify-self: center;
       }
       &__digit {

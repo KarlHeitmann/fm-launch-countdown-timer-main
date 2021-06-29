@@ -21,19 +21,17 @@ body {
     background-image: url(../images/bg-stars.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around; }
+    display: grid;
+    justify-items: center;
+    align-items: center; }
     .countdown__stars__heading {
       color: var(--white); }
     .countdown__stars__clock {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 0.25rem;
       color: var(--grayish-blue); }
       .countdown__stars__clock__number {
-        margin: 0 1.5rem;
-        padding: 10rem;
         justify-self: center; }
       .countdown__stars__clock__digit {
         border-radius: 0.5rem;
